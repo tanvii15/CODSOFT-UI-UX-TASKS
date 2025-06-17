@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup/Login UI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a1f44;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 20px;
+      width: 300px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      margin: 10px 0;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .social-btn {
+      background: #f5f5f5;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .main-btn {
+      background: #6c63ff;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .alt {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .alt a, .forgot {
+      color: #6c63ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .divider {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Welcome Card -->
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>Please login or sign up to continue using our app.</p>
+      <img src="undraw_confirmation_31jc.png" alt="Welcome Illustration" />
+
+      <p class="divider">Enter via Social Networks</p>
+      <div class="social">
+        <button class="social-btn">
+          <img src="icons8-facebook-100.png" alt="Facebook" width="30" />
+        </button>
+        <button class="social-btn">
+          <img src="icons8-twitter-logo-48.png" alt="Twitter" width="30" />
+        </button>
+      </div>
+
+      <p class="divider">or login with email</p>
+      <button class="main-btn">Sign up</button>
+      <p class="alt">You already have an account? <a href="#">Login</a></p>
+    </div>
+
+    <!-- Sign Up Card -->
+    <div class="card">
+      <h2>Sign Up</h2>
+      <p>Please register with email and sign up to continue using our app.</p>
+      <div class="social">
+        <button class="social-btn">
+          <img src="icons8-facebook-100.png" alt="Facebook" width="30" />
+        </button>
+        <button class="social-btn">
+          <img src="icons8-twitter-logo-48.png" alt="Twitter" width="30" />
+        </button>
+      </div>
+      <p class="divider">or login with email</p>
+      <input type="email" placeholder="tanviagrawal@gmail.com" />
+      <input type="password" placeholder="••••••••" />
+      <label><input type="checkbox" /> I agree with privacy policy</label>
+      <button class="main-btn">Sign up</button>
+      <p class="alt">You already have an account? <a href="#">Login</a></p>
+    </div>
+
+    <!-- Login Card -->
+    <div class="card">
+      <h2>Login Now</h2>
+      <p>Please login to continue using our app.</p>
+      <div class="social">
+        <button class="social-btn">
+          <img src="icons8-facebook-100.png" alt="Facebook" width="30" />
+        </button>
+        <button class="social-btn">
+          <img src="icons8-twitter-logo-48.png" alt="Twitter" width="30" />
+        </button>
+      </div>
+      <p class="divider">or login with email</p>
+      <input type="email" placeholder="tanviagrawal@gmail.com" />
+      <input type="password" placeholder="••••••••" />
+      <a href="#" class="forgot">Forgot Password?</a>
+      <button class="main-btn">Login</button>
+      <p class="alt">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
