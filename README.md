@@ -1,4 +1,4 @@
-# CODSOFT-UI-UX-TASKS
+# Codsoft task 1
 Task 1: Mobile app signup flow using HTML, CSS
 This project is a simple, responsive Signup and Login UI for a mobile app. It demonstrates a clean and user-friendly interface for onboarding users.
 Features include:
